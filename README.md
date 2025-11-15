@@ -76,9 +76,36 @@ Compare the original modulating signal with the demodulated signal. PROCEDURE
 
 Program
 
+Am=5.6;
 
+Ac=11.4;
+
+Fm=436;
+
+Fc=4360;
+
+Fs=37400;
+
+T=0:1/fs:2/fm;
+
+M=Am*cos(2*3.14*fm*t);
+
+C=Ac*cos(2*3.14*fc*t);
+
+S=(Ac+m).*cos(2*3.14*fc*t);
+
+Subplot(3,1,1); Plot(t,m);
+
+Subplot(3,1,2);
+
+Plot(t,c);
+
+Subplot(3,1,3);
 
 Output Waveform
+
+
+![WhatsApp Image 2025-11-15 at 08 30 12_945e37ea](https://github.com/user-attachments/assets/4a7cdf89-55c8-4033-81fa-b3eb4dad1f28)
 
 
 
@@ -87,18 +114,20 @@ Output Waveform
 TABULATION:
 
 
+![WhatsApp Image 2025-11-15 at 08 31 56_c0d02fb9](https://github.com/user-attachments/assets/b1f31ef5-55d9-4743-a1d2-f4731042898e)
+
+
 
 Calculation
-1.	ma (Theory) = am/ac =
-2.	ma(Practical) = (Emax-Emin)/(Emax+Emin) =
+1.	ma (Theory) = am/ac =3
+2.	ma(Practical) = (Emax-Emin)/(Emax+Emin) =3
 
 
 MODEL GRAPH
+
+
  <img width="919" height="1290" alt="image" src="https://github.com/user-attachments/assets/55326c5b-7dd5-4873-aaf6-d219bb7c4420" />
 
  
- 
-
-
-RESULT:
+ RESULT:
 Thus the amplitude modulation and demodulation is experimentally done and the output is verified.
